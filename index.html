@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arcade game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="score__board">
+    <div class="score__board-content">
+      <div class="gem__score">
+        <span class="score">0</span>
+        <img src="images/gem.png" alt="purple gem" width="30px" height="30px">
+      </div>
+      <div class="heart__score">
+        <span class="score">1</span>
+        <img src="images/small-heart.png" alt="Red Heart" width="30px" height="30px">
+      </div>
+    </div>
+  </div>
+  <!-- choose character modal -->
+  <div class="modal ">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1>Choose Character</h1>
+      <div class="characters">
+        <img src="images/char-boy.png" data-name="boy" alt="boy" class="images">
+        <img src="images/char-cat-girl.png" data-name="cat-girl" alt="cat girl" class="images">
+        <img src="images/char-horn-girl.png" data-name="horn-girl" alt="horn girl" class="images">
+        <img src="images/char-pink-girl.png" data-name="pink-girl" alt="pink girl" class="images">
+        <img src="images/char-princess-girl.png" data-name="princess-girl" alt="princess girl" class="images">
+      </div>
+    </div>
+  </div>
+  <!-- The win Modal -->
+  <div class="modal hide">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/congrats.png" alt="purple gem" width="400px" height="100px">
+      <div class="win__popUp">
+        <p class="content">Woo hoo! You crossed!</p>
+        <div class="gem__score">
+          <span class="content">Points Earned :</span>
+          <span class="score"></span>
+          <img src="images/gem.png" alt="purple gem" width="30px" height="25px">
+        </div>
+        <div class="heart__score">
+          <span class="content">Lives Left :</span>
+          <span class="score"></span>
+          <img src="images/small-heart.png" alt="Red Heart" width="30px" height="25px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game over modal -->
+
+  <div class="modal hide">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1>GAME OVER</h1>
+      <p>0 Lives left. You have lost the game! :(</p>
+    </div>
+  </div>
+
+  <script src="js/resources.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/engine.js"></script>
+</body>
+
+</html>
