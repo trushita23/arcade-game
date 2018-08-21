@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+    box-sizing: border-box;
+    color: #daa520;
+    font-family: Bradley Hand, cursive;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,1);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+}
+
+.hide
+{
+  display: none;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* highlight character that is currently focussed on */
+.images:hover,
+.images:focus {
+    background-image: url(../images/Selector.png);
+    height: 20%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+  font-family: Bradley Hand, cursive;
+  color: #daa520;
+}
+
+/* score board */
+.score__board {
+  width: 30%;
+  text-align: center;
+  margin: auto;
+}
+
+.gem__score {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.heart__score {
+  display: inline-block;
+}
+
+.win__popUp {
+  font-size: 1.5em;
+}
